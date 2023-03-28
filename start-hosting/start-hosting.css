@@ -1,0 +1,63 @@
+main{
+    padding-top: 2rem;
+}
+.signup-title{
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+}
+.signup-form label,
+.signup-form select,
+.signup-form input {
+    display: block;
+    width: 100%;
+}
+.signup-form {
+    padding: 1rem;
+    display: grid;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 0.5rem;
+}
+.signup-form label {
+    font-weight: bold;
+}
+.signup-form input,
+.signup-form select {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: none;
+    background: rgba(214, 212, 212, 0.939);
+    border-color: lightgreen;
+}
+.signup-form :invalid {
+    border-color: red;
+    background: lightcoral;
+
+}
+.signup-form input [id*="terms"]
+.signup-form input [id*="terms"] + label {
+    display: inline-block;
+    width: auto;
+}
+.signup-form button[type="submit"] {
+    display: block;
+} 
+@media (min-width: 40rem) {
+    .signup-form {
+        margin: auto;
+        width: 30rem;
+        grid-template-columns: 10rem auto;
+        grid-row-gap: 1rem;
+        grid-column-gap: 0.5rem;
+    }
+    #title {
+        grid-column: span 2;
+    }
+    .signup-form__checkbox {
+        grid-column: span 2;
+    }
+}

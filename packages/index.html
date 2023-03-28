@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my first CSS demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="packages.css"/>
+
+</head>
+<div class="background"></div>
+<body>
+<header class="main-header">
+    <div>
+        <a href="../index.html" class="brandname">
+            <img src="../images/uhost-icon.png" alt="UHOST">
+        </a>
+    </div>
+    <nav class="main-nav">
+        <ul class="main-nav_items">
+            <li class="main-nav_item">
+                <a href="./index.html">Packages</a>
+            </li>
+            <li class="main-nav_item">
+                <a href="../customers/index.html">CUSTOMER</a>
+                <!--                To hide element:           <a href="#" style="display: none">CUSTOMER</a>-->
+            </li>
+            <li class="main-nav_item main-nav_item--CTA">
+                <a href="../start-hosting/index.html">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="package" id="plus">
+        <a href="#"> 
+            <h1 class="package_title">OUR PLUS PLAN</h1>
+            <h2 class="package_badge">RECOMMENDED</h2>
+            <h2 class="package_subtitle">The Most Popular choice od our customers.</h2>
+            <p class="package_info">Benefit from increase storage and faster support to ensure that your mission-criticacl data and applications are always available!</p>
+        </a>
+    </section>
+    <section class="package" id="free">
+        <a href="#">
+            <h1 class="package_title">OUR FREE PLAN</h1>
+            <h2 class="package_subtitle">An extremely  solid start into our hosting world.</h2>
+            <p class="package_info">Get started immediately at zero cost!</p>
+        </a>
+    </section>
+    <div class="clear_fix">
+        
+    </div>
+    <section class="package" id="premium">
+        <a href="#">
+            <h1 class="package_title">Our PREMIUM Plan</h1>
+            <h2 class="package_subtitle">All your enterprise needs.Instant support,guranted uptime</h2>
+            <p class="package_info">The best solution for small to large enterprises,because hosting should not be in the way</p>
+        </a>
+    </section>
+</main>
+<footer class="main-footer">
+    <nav>
+        <ul class="main-footer_links">
+            <li class="main-footer_link"><a href="#">SUPPORT</a></li>
+            <li class="main-footer_link"><a href="#">TERMS OF USE</a></li>
+        </ul>
+    </nav>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>
+  
